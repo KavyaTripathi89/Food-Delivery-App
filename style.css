@@ -1,0 +1,226 @@
+/* CSS RESET */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{ 
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+
+
+ #navbar ul{
+    display: flex;
+}
+ #navbar::before{
+     content: "";
+     background-color: black;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.4;
+     top: 0px;
+     left: 0px;
+ }
+ #navbar ul li{
+     list-style-type: none;
+     font-size: 1.3rem;
+ }
+ #navbar ul li a{
+     color: white;
+    display: block;
+    padding: 3px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+ }
+ #navbar ul li a:hover{
+     color: black;
+     background-color: white;
+     font-family: 'Lora', serif;
+     
+
+ }
+ /* Home Section  */
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+     height:480px;
+ }
+ #home::before{
+    content: "";
+    background: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat center center/cover ;
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+    top: 0px;
+    left: 0px;
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+        font-style: font-family: 'Libre Baskerville', serif;
+        ;
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: font-family: 'Libre Baskerville', serif;
+        
+    }
+    /* Utility Classes */
+    .h-primary{
+        font-size: 3.8rem;
+        padding: 12px;
+        font-style: font-family: 'Libre Baskerville', serif;
+    }
+    .h-secondary{
+        font-size: 2.3rem;
+        padding: 12px;
+        font-style: font-family: 'Libre Baskerville', serif;
+
+    }
+    .btn{
+        padding: 6px 19px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        margin: 17px 17px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    .center{
+        text-align: center;
+    }
+    /* Services Section  */
+    #services{
+        margin: auto;
+        display: flex;
+}
+    #services .box{
+        border: 2px solid brown;
+        padding: 14px;
+        margin: 20px 30px;
+        border-radius: 23px;
+        background-color: rgb(224, 209, 209);
+        
+    }
+    #services .box img{
+        height: 180px;
+        width: auto;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+    #services .box p{
+         font-family: 'Libre Baskerville', serif;
+    
+    }
+  
+    /* CLIENTS SECTION  */
+    #client-section{
+        height: 300px;
+
+
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        width: 95px;
+        padding: 20px;
+        height: 85px;
+        border-radius: 30px;
+    }
+    .client-item{
+        padding: 34px;
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background: url(https://images.pexels.com/photos/65174/pexels-photo-65174.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+        width: 100%;
+        height: 48%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    /* Contact section  */
+    #contact{
+        position: relative;
+        height: auto;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url(https://images.pexels.com/photos/17663/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat center center/cover;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 11px;
+        font-size: 1.1rem;
+
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box form{
+        width: 40%;
+
+    }
+    #contact-box label{
+        font-size: 1.3rem;
+        font-family: 'Libre Baskerville', serif;
+        width: 50%;
+    }
+
+    #contact-box label:hover{
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        
+    }
